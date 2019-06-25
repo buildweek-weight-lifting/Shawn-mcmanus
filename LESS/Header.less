@@ -1,17 +1,18 @@
 
 .top-content-background-picture {
-    background-image: url("/Pictures/hero-image.jpg");
+    background-image: url("/Pictures/Borders.svg"), url("/Pictures/hero-image.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    max-width: 100%;
-    height: 800px;
+    background-size: cover;
+    width: 100%;
+
+    @media @phone {
+        background-image: url("/Pictures/hero-image.jpg");
+        width: 100%;
+        background-position-x: -419px;
+    }
 }
 
-.top-content2 {
-    background-image: url("/Pictures/Borders.svg");
-    width: 100%;
-    height: 800px;
-}
+
 
 .Header1 {
     height: 300px;
@@ -32,6 +33,13 @@
        font-size: 24px;
        line-height: 30px; 
        color: white;
+       @media @phone {
+           text-align: center;
+       }
+   }
+   @media @phone {
+      padding-left: 60px;
+      text-align: center;
    }
 }
 
@@ -43,6 +51,9 @@
     font-weight: bold;
     background-color: #FFEC42;
     border: 0px;
+    @media @phone {
+        margin-left: 155px;
+    }
 }
 
 .bottom-top-page {
@@ -64,6 +75,9 @@
         border: 1px;
         padding: 50px 15px 50px 50px ;
         background-color: white;
+        @media @phone {
+            display: none;
+        }
     }
     h4 {
         padding-bottom: 15px;
@@ -84,6 +98,9 @@
         padding-left: 30px;
         display: flex;
        flex-wrap: wrap;
+       @media @phone {
+           display: none;
+       }
        h4 {
            display: flex;
            align-items: flex-end;
@@ -107,10 +124,15 @@
         display: flex;
         align-items: center;
         a {
+            display: flex;
+            align-items: center;
             text-decoration-line: none;
             font-family: Roboto;
             font-weight: bold;
             color: #1c1c1c;
+        }
+        @media @phone {
+            display: none;
         }
     }
 }

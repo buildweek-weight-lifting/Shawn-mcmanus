@@ -5,6 +5,7 @@
     justify-content: space-between;
     margin-right: 10px;
     padding: 35px 50px;
+
     a {
         font-size: 18px;
         width: 400px;
@@ -12,9 +13,23 @@
         text-decoration-line: none;
         padding-right: 80px;
         font-family: Oswald
+       
     }
-    .AtagYellow {
-        color: #ffec42;
+    a:hover {
+        color: #FFEC42;
+    }
+    
+}
+
+.Navlogo {
+    display: none;
+    @media @phone {
+        display: inline;
     }
 }
 
+.Navbar1 {
+    @media @phone {
+        display: none;
+    }
+}

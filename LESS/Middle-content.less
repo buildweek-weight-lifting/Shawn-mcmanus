@@ -24,4 +24,13 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        @media @phone {
+            margin-bottom: 5%;
+        }
+    }
 }
