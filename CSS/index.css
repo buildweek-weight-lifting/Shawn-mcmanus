@@ -312,7 +312,7 @@ span {
 }
 @media (max-width: 500px) {
   .AboutHeader {
-    padding-bottom: 10%;
+    margin-bottom: 18%;
   }
 }
 .AboutHeader h1 {
@@ -353,6 +353,9 @@ span {
     margin-top: 15px;
     text-align: center;
   }
+}
+.TopNav .Navbar1 a {
+  text-shadow: -2px 2px 2px black;
 }
 .TopNav a {
   font-size: 18px;
@@ -482,6 +485,7 @@ span {
 @media (max-width: 500px) {
   .cards-container {
     height: 100%;
+    margin-top: 15%;
   }
 }
 .cards-container .card {
@@ -510,6 +514,7 @@ span {
 @media (max-width: 500px) {
   .tabs .Team-members {
     margin-bottom: 50px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,13 +533,10 @@ span {
 @media (max-width: 500px) {
   .tabs .Team-members .tab {
     width: 80%;
-    margin-top: 2%;
+    margin-top: 3%;
     font-size: 14px;
     text-align: center;
   }
-}
-.tab:hover {
-  background-color: #FFEC42;
 }
 .bottom-content {
   width: 100%;
