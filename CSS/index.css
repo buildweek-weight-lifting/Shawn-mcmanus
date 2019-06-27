@@ -321,6 +321,25 @@ span {
   margin-right: 10px;
   padding: 35px 50px;
 }
+@media (max-width: 500px) {
+  .TopNav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.TopNav .dropdown-button {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .TopNav .Navbar1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
 .TopNav a {
   font-size: 18px;
   width: 400px;
@@ -328,6 +347,12 @@ span {
   text-decoration-line: none;
   padding-right: 80px;
   font-family: Oswald;
+}
+@media (max-width: 500px) {
+  .TopNav a {
+    margin-top: 15px;
+    padding: 0;
+  }
 }
 .TopNav a:hover {
   color: #FFEC42;
@@ -341,7 +366,7 @@ span {
   }
 }
 @media (max-width: 500px) {
-  .Navbar1 {
+  .dropdown-hidden {
     display: none;
   }
 }

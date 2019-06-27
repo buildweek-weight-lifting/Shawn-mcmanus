@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>About Hercules</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <link href="CSS/index.css" rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-        <script src="Tabs/Tabs.js" async></script>
-    </head>
 
-    <body>
-        <div class="top-middle-content">
-            <div class="TopNav">
-                    <img src= "Pictures/hercules logo.svg" alt= "Class logo">
-                    <img class="Navlogo" src="Pictures/Nav.svg" alt= 'Nav logo'>
-                <nav class= "Navbar1">
-                    <a href="index.html">Home</a>
-                    <a href="#">About Hercules</a>
-                    <a href="#">Sign in</a>
-                    <a href="#">Sign up</a>
+<head>
+    <title>About Hercules</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="CSS/index.css" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="Tabs/Tabs.js" async></script>
+    <script src="Nav-dropdown/Nav-dropdown.js" async></script>
+</head>
+
+<body>
+    <div class="top-middle-content">
+        <div class="TopNav">
+            <img src="Pictures/hercules logo.svg" alt="Class logo">
+            <div class="dropdown-button"> <img class="Navlogo" src="Pictures/Nav.svg" alt='Nav logo'> </div>
+            <div class="dropdown-content dropdown-hidden">
+                <nav class="Navbar1">
+                    <a class="dropdown-link" href="index.html" target="_blank">Home</a>
+                    <a class="dropdown-link" href="#" target="_blank">About Hercules</a>
+                    <a class="dropdown-link" href="#" target="_blank">Sign in</a>
+                    <a class="dropdown-link" href="#" target="_blank">Sign up</a>
                 </nav>
             </div>
+        </div>
 
-            <header class="AboutHeader">
-                <h1>OUR POWERFUL TEAM 💪</h1>
-                <p>Here's our team of experts that all came together to create Hercules!</p>
-            </header>
+        <header class="AboutHeader">
+            <h1>OUR POWERFUL TEAM 💪</h1>
+            <p>Here's our team of experts that all came together to create Hercules!</p>
+        </header>
 
+        <div class="card-tabs-container">
             <div class="cards-container">
 
 
@@ -96,29 +104,30 @@
                         <span>BAZEN BERHANE</span>
                     </div>
                 </div>
-            </div>    
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="Team-members">
+                <div data-tab="all" class="tab active-tab">ALL</div>
+                <div data-tab="WebUI" class="tab">WEB UI DEVS</div>
+                <div data-tab="Front-ends" class="tab">FRONT-END ARCHITECTS</div>
+                <div data-tab="Back-ends" class="tab">BACK-END ARCHITECTS</div>
+                <div data-tab="WebUiUx" class="tab">UI/UX DESIGNER</div>
+                <div data-tab="Team-lead" class="tab">TEAM LEAD</div>
+            </div>
+        </div>
+    </div>
 
-                <div class="tabs">
-                    <div class="Team-members">
-                        <div data-tab="all" class="tab active-tab">ALL</div>
-                        <div data-tab="WebUI" class="tab">WEB UI DEVS</div>
-                        <div data-tab="Front-ends" class="tab">FRONT-END ARCHITECTS</div>
-                        <div data-tab="Back-ends" class="tab">BACK-END ARCHITECTS</div>
-                        <div data-tab="WebUiUx" class="tab">UI/UX DESIGNER</div>
-                        <div data-tab="Team-lead" class="tab">TEAM LEAD</div>
-                    </div>
-                </div>
-            </div> 
+    <footer>
+        <nav class="bottom-nav">
+            <a href="index.html">Home</a>
+            <a href="#">About Hercules</a>
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
+        </nav>
+        <p>© Hercules 2019</p>
+    </footer>
 
-        <footer>
-            <nav class="bottom-nav">
-                <a href="index.html">Home</a>
-                <a href="#">About Hercules</a>
-                <a href="#">Sign in</a>
-                <a href="#">Sign up</a>
-            </nav>
-            <p>© Hercules 2019</p>
-        </footer>
+</body>
 
-    </body>
 </html>
