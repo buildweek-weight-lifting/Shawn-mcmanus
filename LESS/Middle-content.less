@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media @phone {
+        align-items: center;
+        text-align: center;
+    }
     h2 {
         font-family: Oswald;
         font-weight: bold;
@@ -35,10 +39,12 @@
     }
 }
 
-
+.card-tabs-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 .cards-container {
-    height: 500px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -48,7 +54,7 @@
         height: 100%;
     }
     .card {
-        margin-top: 16px;
+        margin-top: 1%;
         .author {
             text-align: center;
         }
@@ -56,11 +62,12 @@
 }
 
 .tabs{
-    height: 200px;
+    width: 100%;
+    height: 150px;
     display: flex;
     align-items: center;
     @media @phone {
-        margin-top: 50px;
+        margin: 50px 0;
     }
     .Team-members {
         width: 100%;
@@ -80,11 +87,18 @@
             font-weight: bold;
             font-size: 16px;
             color: white;
+            border: 1px solid rgb(196, 199, 24);
+            cursor: pointer;
             @media @phone {
+                width: 80%;
+                margin-top: 2%;
                 font-size: 14px;
                 text-align: center;
-                border-bottom: 1px solid black;
             }
         }
     }
+}
+
+.tab:hover {
+    background-color:  #FFEC42;
 }

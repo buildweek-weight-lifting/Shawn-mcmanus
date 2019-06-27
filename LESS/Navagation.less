@@ -9,11 +9,12 @@
        width: 100%;
        display: flex;
        flex-wrap: wrap;
+       position: absolute;
+       z-index: 1;
     }
     .dropdown-button {
         display: flex;
         align-items: center;
-        
     }
     .Navbar1 {
         @media @phone {
@@ -50,9 +51,50 @@
 }
 
 
-
 .dropdown-hidden {
     @media @phone {
     display: none;
+    }
+}
+
+.TopNav2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    padding: 35px 50px;
+    @media @phone {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .dropdown-button {
+        display: flex;
+        align-items: center;
+    }
+    .Navbar2 {
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+    
+    
+    a {
+        font-size: 18px;
+        width: 400px;
+        color: white;
+        text-decoration-line: none;
+        padding-right: 80px;
+        font-family: Oswald;
+        @media @phone {
+            margin-top: 15px;
+            padding: 0;
+        }
+    }
+    a:hover {
+        color: #FFEC42
     }
 }
