@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>Hercules</title>
-        <link href="CSS/index.css" rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    </head>
 
-        <body>
-            <section class="top-content-background-picture">
-                <section class="top-content2">
-                    <Div class="TopNav">
-                            <img src= 'Pictures/hercules logo.svg' alt= 'Class logo'>
-                            <img class="Navlogo" src="Pictures/Nav.svg" alt= 'Nav logo'>
-                        <nav class='Navbar1'>
-                            <a href='#'>Home</a>
-                            <a href='#'>About Hercules</a>
-                            <a href='#'>Sign in</a>
-                            <a href='#'>Sign up</a>
-                        </nav>
-                    </Div>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Hercules</title>
+    <link href="CSS/index.css" rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="Nav-dropdown/Nav-dropdown.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+</head>
 
-                    <div class="Header1">
-                        <h1>HERCULES</h1>
-                        <p>THE WEIGHTLIFTING APP TO RULE THEM ALL.</p>
-                    </div>
-                    <button class='Button1'>Get started <img src= 'Pictures/arrow-right.svg' alt= 'arrow-right'></button>
-                    
-                    <section class='bottom-top-page'>
-                        <Div class='bottom-arrow-box'>
-                            <img src = 'Pictures/chevrons-down.svg' alt= 'arrow down'>
-                        </Div>
-                        <div class='Micah-box'>
-                            <h4>MICAH GABRIEL</h4>
-                                <p>"Hercules is the dopest, easiest workout out to use and to track your progress."</p>
-                        </div>
-                        <div class='Workout-tracking-box'>
-                            <h4>WORKOUT TRACKING</h4>
-                                <p>Track your workout progress with ease and convience. No other app can compete!</p>
-                                <a href='#'>See more features</a>
-                        </div>
-                        <div class='Meet-our-team-box'>
-                            <a href='#'>Meet our team</a>
-                        </div>
-                    </section>
-                </section>
-            </section>
-                <div class="middle-quote">
-                    <h2>WHAT YOU GET FROM HERCULES</h2>
-                        <p>"There's nothing else like it." -Ashley Garcia</p>
-                </div>
-            <section class='middle-content'>
-                <img src= 'Pictures/Feature 1.png' alt= 'Deadlifts'>
-                <img src= 'Pictures/Feature 2.png' alt= 'Lady workingout'>
-                <img src= 'Pictures/Feature 3.png' alt= 'Olympic pullups'>
-            </section>
-
-            <section class='bottom-content'>
-                <div class='workout-phone-pic'>
-                    <img class="Iphone2" src= 'Pictures/iPhone-XR-2.png' alt= "Iphone workout">
-                </div>
-                <div class='middle-bottom-content'>
-                    <h3>JOIN HERCULES TODAY, AND START YOUR PERSONLIZED JOURNEY!</h3>
-                    <button>Get started <img src= 'Pictures/arrow-right.svg' alt= 'arrow-right'></button>
-                </div>
-                <div class="workout-phone-tracker">
-                    <img class="Iphone1" src= 'Pictures/iPhone-XR-1.png' alt= 'Iphone tracker'>
-                </div>
-            </section>
-
-            <footer>
-                <nav class='bottom-nav'>
-                    <a href='#'>Home</a>
-                    <a href='#'>About Hercules</a>
-                    <a href='#'>Sign in</a>
-                    <a href='#'>Sign up</a>
+<body>
+    <section class="top-content-background-picture">
+        <section class="top-content2">
+            <Div class="TopNav">
+                <img src='Pictures/hercules logo.svg' alt='Class logo'>
+                <div class="dropdown-button"> <img class="Navlogo" src="Pictures/Nav.svg" alt='Nav logo'> </div>
+            <div class="dropdown-content dropdown-hidden">
+                <nav class='Navbar1'>
+                    <a class="dropdown-link" href='#'>Home</a>
+                    <a class="dropdown-link" href='https://buildweek-weight-lifting.github.io/Shawn-mcmanus/about.html'>About Hercules</a>
+                    <a class="dropdown-link" href='https://herculesweightapp.netlify.com/login'>Sign in</a>
+                    <a class="dropdown-link" href='https://herculesweightapp.netlify.com/signup'>Sign up</a>
                 </nav>
-                <p>© Hercules 2019</p>
-            </footer>
-    </body>
+            </div>
+            </Div>
+
+            <div class="Header1">
+                <h1>HERCULES</h1>
+                <p>THE WEIGHTLIFTING APP TO RULE THEM ALL.</p>
+                <button class='Button1'>Get started <img src='Pictures/arrow-right.svg' alt='arrow-right'></button>
+            </div>
+
+            <section class='bottom-top-page'>
+                <Div class='bottom-arrow-box'>
+                    <img src='Pictures/chevrons-down.svg' alt='arrow down'>
+                </Div>
+                <div class='Micah-box'>
+                    <h4>MICAH GABRIEL</h4>
+                    <p>"Hercules is the dopest, easiest workout out to use and to track your progress."</p>
+                </div>
+                <div class='Workout-tracking-box'>
+                    <h4>WORKOUT TRACKING</h4>
+                    <p>Track your workout progress with ease and convience. No other app can compete!</p>
+                    <a href='#'>See more features</a>
+                </div>
+                <div class='Meet-our-team-box'>
+                    <a href='#'>Meet our team</a>
+                </div>
+            </section>
+        </section>
+    </section>
+    <div class="middle-quote">
+        <h2>WHAT YOU GET FROM HERCULES</h2>
+        <p>"There's nothing else like it." -Ashley Garcia</p>
+    </div>
+    <section class='middle-content'>
+        <img src='Pictures/Feature 1.png' alt='Deadlifts'>
+        <img src='Pictures/Feature 2.png' alt='Lady workingout'>
+        <img src='Pictures/Feature 3.png' alt='Olympic pullups'>
+    </section>
+
+    <section class='bottom-content'>
+        <div class='workout-phone-pic'>
+            <img class="Iphone2" src='Pictures/iPhone-XR-2.png' alt="Iphone workout">
+        </div>
+        <div class='middle-bottom-content'>
+            <h3>JOIN HERCULES TODAY, AND START YOUR PERSONLIZED JOURNEY!</h3>
+            <button>Get started <img src='Pictures/arrow-right.svg' alt='arrow-right'></button>
+        </div>
+        <div class="workout-phone-tracker">
+            <img class="Iphone1" src='Pictures/iPhone-XR-1.png' alt='Iphone tracker'>
+        </div>
+    </section>
+
+    <footer>
+        <nav class='bottom-nav'>
+            <a href='#'>Home</a>
+            <a href='about.html'>About Hercules</a>
+            <a href='https://herculesweightapp.netlify.com/login'>Sign in</a>
+            <a href='https://herculesweightapp.netlify.com/signup'>Sign up</a>
+        </nav>
+        <p>© Hercules 2019</p>
+    </footer>
+</body>
+
 </html>
