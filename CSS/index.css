@@ -350,8 +350,9 @@ span {
   .TopNav .Navbar1 {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    align-items: center;
     text-align: center;
+    margin-top: 15px;
   }
 }
 .TopNav .Navbar1 a {
